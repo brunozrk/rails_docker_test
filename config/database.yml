@@ -14,6 +14,7 @@ test:
 
 production:
   <<: *default
-  username: postgres
+  username: <%= ENV["DB_USERNAME"] %>
+  password: <%= ENV["DB_PASSWORD"] %>
   host: db
   database: rails_docker_test_production
