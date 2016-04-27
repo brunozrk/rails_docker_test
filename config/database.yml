@@ -15,4 +15,5 @@ test:
 production:
   <<: *default
   username: postgres
+  host: db
   database: rails_docker_test_production
