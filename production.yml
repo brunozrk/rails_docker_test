@@ -10,6 +10,7 @@ app:
   command: bundle exec puma -p 9001 -e production
   environment:
     - RAILS_ENV=production
+    - SECRET_KEY_BASE=50674ee8a9a9576168baa406d95677e99fdc189c6a3eebf5b53b7dda96ce05438eb4987c8397027f53acaa2de4f70b670fed3bac5a6cee386a71d9fcbd560dff
   volumes:
     - .:/usr/src/app
   expose:
