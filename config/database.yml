@@ -1,0 +1,17 @@
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  username: brunozrk
+  pool: 5
+
+development:
+  <<: *default
+  database: rails_docker_test_development
+
+test:
+  <<: *default
+  database: rails_docker_test_test
+
+production:
+  <<: *default
+  database: rails_docker_test_production
